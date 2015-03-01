@@ -18,9 +18,14 @@ body {
 	background-color: #fff;
 	color: #464c3e;
 }
-
+html * {
+	font-family: 'Helvetica Neue', Helvetica, Arial, Sans-Serif !important;
+}
+#wpadminbar {
+	display: none;
+}
 #branding a {
-	color: #2a85e8;
+	color: #444; /*#2a85e8;*/
 	font-size: 1.3em;
 	text-shadow: 0 0 0;
 }
@@ -43,18 +48,26 @@ h1#site-title a {
 #branding div ul a:hover,
 #branding ul .active > a {
 	background-color: transparent;
-	color: #3D84D0;
-	text-decoration: none;
+	/*color: #3D84D0;
+	text-decoration: none;*/
+}
+#branding ul li a {
+	color: #999;
+}
+#branding ul li a:hover {
+	color: #7b7b7b;
 }
 #branding ul li.current-menu-item > a {
-	color: #edf1ea;
-	background-color: #2a85e8;
+	color: #545454;
+/*	background-color: #2a85e8;
+	text-decoration: underline;*/
 }
 #branding h1#site-title a {
 	font-family: 'Oleo Script', cursive;
 	font-weight: bold;
 	font-size: 2em;
-	color: #98c372;
+	color: #444;
+	/*color: #98c372;*/
 }
 #branding h1 a:hover {
 	color: #7db04f;
@@ -80,7 +93,7 @@ h1#site-title a {
 .row .card {
 	position: relative;
 	display: inline-block;
-	max-height: 215px;
+	max-height: 200px;
 	margin-bottom: 20px;
 }
 /*
@@ -131,7 +144,6 @@ h1#site-title a {
 img.wp-post-image {
 	margin: 0 11px 11px 0;
 	width: 100%;
-	height: 100%;
 }
 
 /*.main-outer .card img, .main-outer .card .card-info {

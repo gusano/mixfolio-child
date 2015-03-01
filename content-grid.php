@@ -5,7 +5,7 @@
  */
 ?>
 
-<div class="col-xs-6 col-md-3">
+<div class="col-xs-6 col-md-4">
 	<div class="card" data-content="">
 		<?php the_post_thumbnail('thumbnail', array( 'class' => 'img-responsive' )); ?>
 		<div class="info">

@@ -23,7 +23,7 @@ get_header(); ?>
 	$ = jQuery;
 	dom = $('#branding ul li:first-child a');
 	// Reset `All` link color
-	dom.css('color', '#2a85e8').css('background-color', '#edf1ea');
+	//dom.css('color', '#2a85e8').css('background-color', '#edf1ea');
 </script>
 
 	<section id="primary" class="full-width">

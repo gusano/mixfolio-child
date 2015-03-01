@@ -1,0 +1,201 @@
+/*
+Theme Name: Mixfolio Child
+Theme URi:http://graphpaperpress.com/themes/mixfolio/
+Author: Yvan Volochine
+Author URi:http://yvanvolochine.com
+Template: Mixfolio
+Description: A responsive, post format-packed, photographer-loving portfolio theme. Use it for your portfolio and make your friends jealous.
+Version: 0.1
+License: GNU General Public License version 3
+License URI: license.txt
+Tags: black, white, light, one-column, two-columns, right-sidebar, custom-background, custom-header, custom-menu, featured-images, flexible-header, full-width-template, post-formats, rtl-language-support, sticky-post, theme-options, translation-ready, photoblogging
+Text Domain: Mixfolio child
+*/
+/* normalize.css 2012-07-07T09:50 UTC - http://github.com/necolas/normalize.css */
+body{margin:0}a:focus{outline:thin dotted}a:active,a:hover{outline:0}h1{font-size:2em;margin:0.67em 0}h2{font-size:1.5em;margin:0.83em 0}h3{font-size:1.17em;margin:1em 0}h4{font-size:1em;margin:1.33em 0}h5{font-size:0.83em;margin:1.67em 0}h6{font-size:0.75em;margin:2.33em 0}
+body {
+/*	background-color: #edf1ea;*/
+	background-color: #fff;
+	color: #464c3e;
+}
+
+#branding a {
+	color: #2a85e8;
+	font-size: 1.3em;
+	text-shadow: 0 0 0;
+}
+#branding #header-group {
+	margin-bottom: 12px;
+}
+h1#site-title a {
+}
+/*#branding ul li:first-child a {
+	color: #edf1ea;
+	background-color: #2a85e8;
+}*/
+#branding ul li a {
+	-webkit-border-radius: 8px;
+	-moz-border-radius: 8px;
+	border-radius: 8px;
+	padding: 6px 10px 7px;
+}
+#branding h1 a:hover,
+#branding div ul a:hover,
+#branding ul .active > a {
+	background-color: transparent;
+	color: #3D84D0;
+	text-decoration: none;
+}
+#branding ul li.current-menu-item > a {
+	color: #edf1ea;
+	background-color: #2a85e8;
+}
+#branding h1#site-title a {
+	font-family: 'Oleo Script', cursive;
+	font-weight: bold;
+	font-size: 2em;
+	color: #98c372;
+}
+#branding h1 a:hover {
+	color: #7db04f;
+}
+#branding-inner, #branding .fill {
+	-webkit-box-shadow: 0 0 0;
+	-moz-box-shadow: 0 0 0;
+	box-shadow: 0 0 0;
+	border-bottom: 1px solid #D0D3CD;
+}
+#branding-inner, #branding .fill, .main-outer {
+	background-color: inherit;
+}
+
+.main-outer {
+	margin: 45px auto 0;
+	padding: 0;
+	/*width: 1000px;*/
+	min-height: 100px;
+	overflow: hidden;
+}
+
+.row .card {
+	position: relative;
+	display: inline-block;
+	max-height: 215px;
+	margin-bottom: 20px;
+}
+/*
+.row .card:after {
+    content: attr(data-content);
+    color:#fff;
+    position:absolute;
+    width:100%; height:100%;
+    top:0; left:0;
+    background:rgba(0,0,0,0.6);
+    opacity:0;
+    transition: all 0.5s;
+    -webkit-transition: all 0.5s;
+}
+.card:hover:after {
+    opacity:1;
+}*/
+
+.row .info {
+	position: absolute;
+	top: 0;
+	width: 100%;
+	height: 100%;
+	padding: 10px 15px;
+	background-color: #000;
+	color: #fff;
+	-webkit-opacity: 0;
+	-moz-opacity: 0;
+	-khtml-opacity: 0;
+	opacity: 0;
+	z-index: 2000;
+	transition: all 0.3s ease;
+	-webkit-transition: all 0.3s ease;
+}
+.row .info:hover {
+	-webkit-opacity: 0.8;
+	-moz-opacity: 0.8;
+	-khtml-opacity: 0.8;
+	opacity: 0.8;
+}
+.info h1 {
+	color: #2a85e8;
+	font-size: 1.4em;
+}
+.info h2, .info p {
+	color: #fff;
+}
+
+img.wp-post-image {
+	margin: 0 11px 11px 0;
+	padding-bottom: 16px;
+}
+
+.row .info:hover {
+	-webkit-opacity: 0.8;
+	-moz-opacity: 0.8;
+	opacity: 0.8;
+}
+
+/*.main-outer .card img, .main-outer .card .card-info {
+	position: absolute;
+	width: 100%;
+	height: 100%;
+}
+
+.main-outer .card img {
+	display: block;
+}*/
+
+.search {
+  position: relative;
+  color: #aaa;
+  font-size: 16px;
+}
+
+.search input {
+  height: 32px;
+  background: #fcfcfc;
+  border: 1px solid #aaa;
+  border-radius: 5px;
+  box-shadow: 0 0 3px #ccc, 0 10px 15px #ebebeb inset;
+}
+
+.search input { text-indent: 32px;}
+.search .fa-search { 
+  position: absolute;
+  top: 10px;
+  left: 10px;
+}
+
+#branding form {
+	float: right;
+	margin: 5px 20px 0 0;
+}
+#branding #searchform input#s {
+	width: 100px;
+	padding: 4px 0 0;
+	border: 0px;
+	background-color: #fff;
+	-webkit-border-radius: 20px;
+	-moz-border-radius: 20px;
+	border-radius: 20px;
+	-webkit-transition: all .5s ease;
+	-moz-transition: all .5s ease;
+	transition: all .5s ease;
+}
+#branding #searchform input#s:hover {
+	background-color: #fff;
+	color: inherit;
+}
+#branding #searchform input#s:focus,
+#branding #searchform input#s.focused {
+	width: 200px;
+	color: #404040;
+	-webkit-box-shadow: 0 0 3px rgba( 0, 0, 0, 0.15 );
+	-moz-box-shadow: 0 0 3px rgba( 0, 0, 0, 0.15 );
+	box-shadow: 0 0 3px rgba( 0, 0, 0, 0.15 );
+}

@@ -138,6 +138,9 @@ body .main-outer .row {
 	-khtml-opacity: 0.8;
 	opacity: 0.8;
 }
+a:hover {
+	color: #fff !important;
+}
 .info h1 {
 	/*color: #2a85e8;*/
 	color: #fff;

@@ -1,17 +1,16 @@
 /*
-Theme Name: Mixfolio Child
-Theme URi:http://graphpaperpress.com/themes/mixfolio/
-Author: Yvan Volochine
-Author URi:http://yvanvolochine.com
-Template: Mixfolio
-Description: A responsive, post format-packed, photographer-loving portfolio theme. Use it for your portfolio and make your friends jealous.
-Version: 0.1
-License: GNU General Public License version 3
-License URI: license.txt
-Tags: black, white, light, one-column, two-columns, right-sidebar, custom-background, custom-header, custom-menu, featured-images, flexible-header, full-width-template, post-formats, rtl-language-support, sticky-post, theme-options, translation-ready, photoblogging
-Text Domain: Mixfolio child
+ Theme Name:  Mixfolio Child
+ Theme URI:   http://graphpaperpress.com/themes/mixfolio/
+ Description: A responsive, post format-packed, photographer-loving portfolio theme. Use it for your portfolio and make your friends jealous.
+ Author:      Yvan Volochine
+ Author URI:  http://yvanvolochine.com
+ Template:    mixfolio
+ Version:     0.1
+ License:     GNU General Public License version 3
+ License URI: http://www.gnu.org/licenses/gpl-3.0.html
+ Tags:        black, white, light, one-column, two-columns, right-sidebar, custom-background, custom-header, custom-menu, featured-images, flexible-header, full-width-template, post-formats, rtl-language-support, sticky-post, theme-options, translation-ready, photoblogging
+ Text Domain: mixfolio-child
 */
-/* normalize.css 2012-07-07T09:50 UTC - http://github.com/necolas/normalize.css */
 body{margin:0}a:focus{outline:thin dotted}a:active,a:hover{outline:0}h1{font-size:2em;margin:0.67em 0}h2{font-size:1.5em;margin:0.83em 0}h3{font-size:1.17em;margin:1em 0}h4{font-size:1em;margin:1.33em 0}h5{font-size:0.83em;margin:1.67em 0}h6{font-size:0.75em;margin:2.33em 0}
 body {
 /*	background-color: #edf1ea;*/

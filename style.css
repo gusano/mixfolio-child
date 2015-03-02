@@ -96,7 +96,6 @@ body .main-outer .row {
 }
 .row .card {
 	position: relative;
-	display: inline-block;
 	max-height: 216px; /* 383x216 */
 	margin-bottom: 20px;
 	overflow: hidden;

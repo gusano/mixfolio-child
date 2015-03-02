@@ -89,11 +89,17 @@ h1#site-title a {
 	overflow: hidden;
 }
 
+body .main-outer .row {
+	max-width: 1360px;
+	padding-left: 70px;
+	padding-right: 70px;
+}
 .row .card {
 	position: relative;
 	display: inline-block;
-	max-height: 200px;
+	max-height: 216px; /* 383x216 */
 	margin-bottom: 20px;
+	overflow: hidden;
 }
 /*
 .row .card:after {
@@ -118,6 +124,7 @@ h1#site-title a {
 	height: 100%;
 	background-color: #000;
 	color: #fff;
+	padding: 10px 20px;
 	-webkit-opacity: 0;
 	-moz-opacity: 0;
 	-khtml-opacity: 0;
@@ -133,7 +140,8 @@ h1#site-title a {
 	opacity: 0.8;
 }
 .info h1 {
-	color: #2a85e8;
+	/*color: #2a85e8;*/
+	color: #fff;
 	font-size: 1.4em;
 }
 .info h2, .info p {

@@ -13,8 +13,7 @@
 */
 body{margin:0}a:focus{outline:thin dotted}a:active,a:hover{outline:0}h1{font-size:2em;margin:0.67em 0}h2{font-size:1.5em;margin:0.83em 0}h3{font-size:1.17em;margin:1em 0}h4{font-size:1em;margin:1.33em 0}h5{font-size:0.83em;margin:1.67em 0}h6{font-size:0.75em;margin:2.33em 0}
 body {
-/*	background-color: #edf1ea;*/
-	background-color: #fff;
+	background-color: rgba(242,242,242,0.95);
 	color: #464c3e;
 }
 html * {
@@ -49,6 +48,13 @@ h1#site-title a {
 	background-color: transparent;
 	/*color: #3D84D0;
 	text-decoration: none;*/
+}
+/**
+ test yvan */
+#branding ul li.menu a {
+	font-family: sans-serif !important;
+	text-transform: uppercase;
+	font-size: 9px;
 }
 #branding ul li a {
 	color: #999;

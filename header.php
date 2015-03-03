@@ -54,7 +54,7 @@
 									<?php
 									$currentCat = get_category(get_query_var('cat'))->slug;
 
-									$categories = get_categories(['hide_empty' => 0]);
+									$categories = get_categories(array('hide_empty' => 0));
 									foreach ($categories as $category) {
 										$niceName = $category->category_nicename;
 										$class = ($niceName === $currentCat) ? 'active' : '';

@@ -18,7 +18,7 @@ body {
 	color: #464c3e;
 }
 html * {
-	font-family: 'Helvetica Neue', Helvetica, Arial, Sans-Serif !important;
+	font-family: "helvetica neue", "helvetica", arial, sans-serif !important;
 }
 #wpadminbar {
 	display: none;
@@ -62,11 +62,13 @@ h1#site-title a {
 	text-decoration: underline;*/
 }
 #branding h1#site-title a {
-	font-family: 'Oleo Script', cursive;
+	/*font-family: 'Oleo Script', cursive;*/
 	font-weight: bold;
 	font-size: 2em;
+	line-height: 25px;
 	color: #444;
-	/*color: #98c372;*/
+	letter-spacing: -1px;
+	-webkit-font-smoothing: antialiased;
 }
 #branding h1 a:hover {
 	color: #7db04f;
@@ -138,9 +140,10 @@ body .main-outer .row {
 	-khtml-opacity: 0.8;
 	opacity: 0.8;
 }
-a:hover {
+.info a:hover {
 	color: #fff !important;
 }
+
 .info h1 {
 	/*color: #2a85e8;*/
 	color: #fff;

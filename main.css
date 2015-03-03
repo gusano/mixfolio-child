@@ -1,0 +1,244 @@
+/*
+ Theme Name:  Mixfolio Child
+ Theme URI:   http://graphpaperpress.com/themes/mixfolio/
+ Description: A responsive, post format-packed, photographer-loving portfolio theme. Use it for your portfolio and make your friends jealous.
+ Author:      Yvan Volochine
+ Author URI:  http://yvanvolochine.com
+ Template:    mixfolio
+ Version:     0.1
+ License:     GNU General Public License version 3
+ License URI: http://www.gnu.org/licenses/gpl-3.0.html
+ Tags:        black, white, light, one-column, two-columns, right-sidebar, custom-background, custom-header, custom-menu, featured-images, flexible-header, full-width-template, post-formats, rtl-language-support, sticky-post, theme-options, translation-ready, photoblogging
+ Text Domain: mixfolio-child
+*/
+body{margin:0}a:focus{outline:thin dotted}a:active,a:hover{outline:0}h1{font-size:2em;margin:0.67em 0}h2{font-size:1.5em;margin:0.83em 0}h3{font-size:1.17em;margin:1em 0}h4{font-size:1em;margin:1.33em 0}h5{font-size:0.83em;margin:1.67em 0}h6{font-size:0.75em;margin:2.33em 0}
+body {
+	background-color: rgba(242,242,242,0.95);
+	color: #464c3e;
+}
+html * {
+	font-family: "helvetica neue", "helvetica", arial, sans-serif !important;
+}
+#wpadminbar {
+	display: none;
+}
+#branding a {
+	color: #444; /*#2a85e8;*/
+	/*font-size: 1.3em;*/
+	text-shadow: 0 0 0;
+}
+#branding #header-group {
+	margin: 20px 0;
+}
+h1#site-title a {
+}
+/*#branding ul li:first-child a {
+	color: #edf1ea;
+	background-color: #2a85e8;
+}*/
+/*
+#branding ul li a {
+	-webkit-border-radius: 8px;
+	-moz-border-radius: 8px;
+	border-radius: 8px;
+	padding: 6px 10px 7px;
+}*/
+#branding h1 a:hover,
+#branding div ul a:hover,
+#branding ul .active > a {
+	background-color: transparent;
+	/*color: #3D84D0;
+	text-decoration: none;*/
+}
+/**
+ test yvan */
+#branding div > ul > li {
+	float: none;
+	font-family: sans-serif !important;
+	text-transform: uppercase;
+	color: #000 !important;
+	font-size: 11px;
+	margin: 0;
+	line-height: 14px;
+	position: relative;
+	top: 14px !important;
+}
+#branding div > ul > li > a {
+	color: #767070 !important;
+	padding: 0;
+	line-height: 14px;
+}
+#branding div > ul > li > a:hover, #branding div > ul > li.active > a:hover {
+	color: #a3a0a0 !important;
+}
+#branding div > ul > li.active > a {
+	background-color: transparent !important;
+	color: #111 !important;
+}
+#branding ul li a {
+	color: #000;
+}
+/*#branding ul li a:hover {
+	color: #7b7b7b;
+}*/
+#branding ul li.current-menu-item > a {
+	color: #545454;
+/*	background-color: #2a85e8;
+	text-decoration: underline;*/
+}
+#branding h1#site-title a {
+	/*font-family: 'Oleo Script', cursive;*/
+	font-weight: bold;
+	font-size: 2em;
+	line-height: 25px;
+	color: #444;
+	letter-spacing: -1px;
+	-webkit-font-smoothing: antialiased;
+}
+#branding h1 a:hover {
+	color: #7db04f;
+}
+#branding-inner, #branding .fill {
+	-webkit-box-shadow: 0 0 0;
+	-moz-box-shadow: 0 0 0;
+	box-shadow: 0 0 0;
+	border-bottom: 1px solid #D0D3CD;
+}
+#branding-inner, #branding .fill, .main-outer {
+	background-color: inherit;
+}
+
+.main-outer {
+	margin: 45px auto 0;
+	padding: 0;
+	/*width: 1000px;*/
+	min-height: 100px;
+	overflow: hidden;
+}
+
+body .main-outer .row {
+	max-width: 1360px;
+	padding-left: 70px;
+	padding-right: 70px;
+}
+.row .card {
+	position: relative;
+	max-height: 216px; /* 383x216 */
+	margin-bottom: 20px;
+	overflow: hidden;
+}
+/*
+.row .card:after {
+    content: attr(data-content);
+    color:#fff;
+    position:absolute;
+    width:100%; height:100%;
+    top:0; left:0;
+    background:rgba(0,0,0,0.6);
+    opacity:0;
+    transition: all 0.5s;
+    -webkit-transition: all 0.5s;
+}
+.card:hover:after {
+    opacity:1;
+}*/
+
+.row .info {
+	position: absolute;
+	top: 0;
+	width: 100%;
+	height: 100%;
+	background-color: #000;
+	color: #fff;
+	padding: 10px 20px;
+	-webkit-opacity: 0;
+	-moz-opacity: 0;
+	-khtml-opacity: 0;
+	opacity: 0;
+	z-index: 2000;
+	transition: all 0.3s ease;
+	-webkit-transition: all 0.3s ease;
+}
+.row .info:hover {
+	-webkit-opacity: 0.8;
+	-moz-opacity: 0.8;
+	-khtml-opacity: 0.8;
+	opacity: 0.8;
+}
+.info a:hover {
+	color: #fff !important;
+}
+
+.info h1 {
+	/*color: #2a85e8;*/
+	color: #fff;
+	font-size: 1.4em;
+}
+.info h2, .info p {
+	color: #fff;
+}
+
+img.wp-post-image {
+	margin: 0 11px 11px 0;
+	width: 100%;
+}
+
+/*.main-outer .card img, .main-outer .card .card-info {
+	position: absolute;
+	width: 100%;
+	height: 100%;
+}
+
+.main-outer .card img {
+	display: block;
+}*/
+
+.search {
+  position: relative;
+  color: #aaa;
+  font-size: 16px;
+}
+
+.search input {
+  height: 32px;
+  background: #fcfcfc;
+  border: 1px solid #aaa;
+  border-radius: 5px;
+  box-shadow: 0 0 3px #ccc, 0 10px 15px #ebebeb inset;
+}
+
+.search input { text-indent: 32px;}
+.search .fa-search { 
+  position: absolute;
+  top: 10px;
+  left: 10px;
+}
+
+#branding form {
+	float: right;
+	margin: 5px 20px 0 0;
+}
+#branding #searchform input#s {
+	width: 100px;
+	padding: 4px 0 0;
+	border: 0px;
+	background-color: #fff;
+	-webkit-border-radius: 20px;
+	-moz-border-radius: 20px;
+	border-radius: 20px;
+	-webkit-transition: all .5s ease;
+	-moz-transition: all .5s ease;
+	transition: all .5s ease;
+}
+#branding #searchform input#s:hover {
+	background-color: #fff;
+	color: inherit;
+}
+#branding #searchform input#s:focus,
+#branding #searchform input#s.focused {
+	width: 200px;
+	color: #404040;
+	-webkit-box-shadow: 0 0 3px rgba( 0, 0, 0, 0.15 );
+	-moz-box-shadow: 0 0 3px rgba( 0, 0, 0, 0.15 );
+	box-shadow: 0 0 3px rgba( 0, 0, 0, 0.15 );
+}

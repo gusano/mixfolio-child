@@ -34,33 +34,57 @@
 			<div id="branding-inner">
 				<div class="container">
 					<hgroup id="header-group">
-						<a href="<?php echo home_url( '/' ); ?>" title="<?php echo esc_attr( get_bloginfo( 'name', 'display' ) ); ?>" rel="home">
-							<img src="<?php bloginfo('stylesheet_directory'); ?>/images/logo.png" alt="logo" />
-						</a>
-						<!--<h1 id="site-title">
-							<a href="<?php echo home_url( '/' ); ?>" title="<?php echo esc_attr( get_bloginfo( 'name', 'display' ) ); ?>" rel="home">
-								<?php if ( isset( $mixfolio_options[ 'mixfolio_logo' ] ) && '' != $mixfolio_options[ 'mixfolio_logo' ] ) { ?>
-									<img class="sitetitle" id="logo-image-home" src="<?php echo $mixfolio_options[ 'mixfolio_logo' ]; ?>" alt="<?php bloginfo( 'name' ); ?>" />
-								<?php } else {
-									bloginfo( 'name' );
-								} ?>
-							</a>
-						</h1>-->
+						<div class="row">
+							<div class="col-md-3">
+								<a href="<?php echo home_url( '/' ); ?>" title="<?php echo esc_attr( get_bloginfo( 'name', 'display' ) ); ?>" rel="home">
+									<img src="<?php bloginfo('stylesheet_directory'); ?>/images/logo.png" alt="logo" />
+								</a>
+							<!--<h1 id="site-title">
+								<a href="<?php echo home_url( '/' ); ?>" title="<?php echo esc_attr( get_bloginfo( 'name', 'display' ) ); ?>" rel="home">
+									<?php if ( isset( $mixfolio_options[ 'mixfolio_logo' ] ) && '' != $mixfolio_options[ 'mixfolio_logo' ] ) { ?>
+										<img class="sitetitle" id="logo-image-home" src="<?php echo $mixfolio_options[ 'mixfolio_logo' ]; ?>" alt="<?php bloginfo( 'name' ); ?>" />
+									<?php } else {
+										bloginfo( 'name' );
+									} ?>
+								</a>
+							</h1>-->
+							</div>
+							<div class="col-md-2">
+								<ul class="categories">
+									<?php
+									$currentCat = get_category(get_query_var('cat'))->slug;
 
-						<?php if ( '' != get_bloginfo( 'description' ) ) : ?>
-							<h2 id="site-description"></h2>
-						<?php endif; ?>
+									$categories = get_categories(['hide_empty' => 0]);
+									foreach ($categories as $category) {
+										$niceName = $category->category_nicename;
+										$class = ($niceName === $currentCat) ? 'active' : '';
+										printf('<li class="%s"><a href="%s/category/%s">%s</a></li>', $class, site_url(), $niceName, $niceName);
+									}
+									?>
+								</ul>
+							</div>
+							<div class="col-md-4">
+								<ul class="contact">
+									<li>Angela Bravo</li>
+									<li><a href="mailto:angelabravo@angelabravo.net">angelabravo@angelabravo.net</a></li>
+									<li>+49 176 3550 7014</li>
+								</ul>
+							</div>
+							<div class="col-md-3">
+								<?php get_search_form(); ?>
+							</div>
+						</div>
 					</hgroup>
 
-					<nav role="navigation" class="nav site-navigation main-navigation">
+					<!--<nav role="navigation" class="nav site-navigation main-navigation">
 						<h1 class="assistive-text"><?php _e( 'Menu', 'mixfolio' ); ?></h1>
 						<div class="assistive-text skip-link"><a href="#content" title="<?php esc_attr_e( 'Skip to content', '_s' ); ?>"><?php _e( 'Skip to content', 'mixfolio' ); ?></a></div>
 						<?php wp_nav_menu( array( 'theme_location' => 'primary' ) ); ?>
-					</nav>
+					</nav>-->
 
-					<div class="hide-on-phones">
+					<!--<div class="hide-on-phones">
 						<?php get_search_form(); ?>
-					</div>
+					</div>-->
 				</div>
 			</div> 
 		</header>

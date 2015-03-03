@@ -58,8 +58,14 @@ get_header(); ?>
 
 						$mixfolio_count++;
 
-					endwhile; wp_reset_postdata(); ?>
-			</div>
+					endwhile; wp_reset_postdata();
+
+					if (!$grid_query->have_posts()) {
+						echo '<p class="text-center" style="padding: 20px; line-height: 40px; font-weight: bold; font-size: 3em">';
+						echo 'Under construction.. <br />Coming soon.</p>';
+					}
+ 				?>
+ 			</div>
 			<!--</ul>--><!-- .grid -->
 
 			<?php mixfolio_content_nav( 'nav-below' ); ?>

@@ -24,11 +24,11 @@ html * {
 }
 #branding a {
 	color: #444; /*#2a85e8;*/
-	font-size: 1.3em;
+	/*font-size: 1.3em;*/
 	text-shadow: 0 0 0;
 }
 #branding #header-group {
-	margin-bottom: 12px;
+	margin: 20px 0;
 }
 h1#site-title a {
 }
@@ -36,12 +36,13 @@ h1#site-title a {
 	color: #edf1ea;
 	background-color: #2a85e8;
 }*/
+/*
 #branding ul li a {
 	-webkit-border-radius: 8px;
 	-moz-border-radius: 8px;
 	border-radius: 8px;
 	padding: 6px 10px 7px;
-}
+}*/
 #branding h1 a:hover,
 #branding div ul a:hover,
 #branding ul .active > a {
@@ -51,17 +52,35 @@ h1#site-title a {
 }
 /**
  test yvan */
-#branding ul li.menu a {
+#branding div > ul > li {
+	float: none;
 	font-family: sans-serif !important;
 	text-transform: uppercase;
-	font-size: 9px;
+	color: #000 !important;
+	font-size: 11px;
+	margin: 0;
+	line-height: 14px;
+	position: relative;
+	top: 14px !important;
+}
+#branding div > ul > li > a {
+	color: #767070 !important;
+	padding: 0;
+	line-height: 14px;
+}
+#branding div > ul > li > a:hover, #branding div > ul > li.active > a:hover {
+	color: #a3a0a0 !important;
+}
+#branding div > ul > li.active > a {
+	background-color: transparent !important;
+	color: #111 !important;
 }
 #branding ul li a {
-	color: #999;
+	color: #000;
 }
-#branding ul li a:hover {
+/*#branding ul li a:hover {
 	color: #7b7b7b;
-}
+}*/
 #branding ul li.current-menu-item > a {
 	color: #545454;
 /*	background-color: #2a85e8;

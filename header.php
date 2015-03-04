@@ -71,7 +71,7 @@
 								</ul>
 							</div>
 							<div class="col-md-3">
-								<?php get_search_form(); ?>
+								<?php //get_search_form(); ?>
 							</div>
 						</div>
 					</hgroup>

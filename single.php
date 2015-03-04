@@ -26,14 +26,6 @@ get_header(); ?>
 
 			<?php mixfolio_content_nav( 'nav-below' ); ?>
 
-			<?php
-				if (
-					'image' != $format && 'gallery' != $format && 'video' != $format &&
-					( comments_open() || '0' != get_comments_number() )
-				)
-					comments_template( '', true );
-			?>
-
 		<?php endwhile; // end of the loop. ?>
 
 		</div><!-- #content -->

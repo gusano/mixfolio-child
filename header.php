@@ -58,7 +58,7 @@
 									foreach ($categories as $category) {
 										$niceName = $category->category_nicename;
 										$class = ($niceName === $currentCat) ? 'active' : '';
-										printf('<li class="%s"><a href="%s/category/%s">%s</a></li>', $class, site_url(), $niceName, $niceName);
+										printf('<li class="%s"><a href="%s/category/%s">%s</a></li>', $class, site_url(), $niceName, $category->name);
 									}
 									?>
 								</ul>

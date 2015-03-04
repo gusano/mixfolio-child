@@ -52,7 +52,6 @@ h1#site-title a {
 #branding div > ul > li {
 	float: none;
 	font-family: sans-serif !important;
-	text-transform: uppercase;
 	color: #000 !important;
 	font-size: 11px;
 	margin: 0;

@@ -238,3 +238,11 @@ img.wp-post-image {
 	-moz-box-shadow: 0 0 3px rgba( 0, 0, 0, 0.15 );
 	box-shadow: 0 0 3px rgba( 0, 0, 0, 0.15 );
 }
+.entry-header .entry-title {
+	color: inherit;
+	font-weight: bold;
+	margin-bottom: 16px;
+}
+.entry-meta {
+	text-transform: none !important;
+}

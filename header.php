@@ -66,8 +66,8 @@
 							<div class="col-md-4">
 								<ul class="contact">
 									<li>Angela Bravo</li>
-									<li><a href="mailto:angelabravo@angelabravo.net">angelabravo@angelabravo.net</a></li>
-									<li>+49 176 3550 7014</li>
+									<li><a href="mailto:arte@angelabravo.net">arte@angelabravo.net</a></li>
+									<li>+49 157 5067 5079</li>
 								</ul>
 							</div>
 							<div class="col-md-3">

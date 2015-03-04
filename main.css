@@ -19,9 +19,6 @@ body {
 html * {
 	font-family: "helvetica neue", "helvetica", arial, sans-serif !important;
 }
-#wpadminbar {
-	display: none;
-}
 #branding a {
 	color: #444; /*#2a85e8;*/
 	/*font-size: 1.3em;*/

@@ -246,3 +246,10 @@ img.wp-post-image {
 .entry-meta {
 	text-transform: none !important;
 }
+a.card-link {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+}

@@ -63,15 +63,26 @@
 									?>
 								</ul>
 							</div>
+							<div class="col-md-2">
+								<ul class="categories">
+									<?php
+									$pages = get_pages();
+									$currentPage = get_query_var('pagename');
+									foreach ($pages as $page) {
+										$link = get_page_link($page->ID);
+										$title = $page->post_title;
+										$class = ($currentPage === strtolower($title)) ? 'active' : '';
+										printf('<li class="%s"><a href="%s">%s</a></li>', $class, $link, $title);
+									}
+									?>
+								</ul>
+							</div>
 							<div class="col-md-4">
 								<ul class="contact">
 									<li>Angela Bravo</li>
 									<li><a href="mailto:arte@angelabravo.net">arte@angelabravo.net</a></li>
 									<li>+49 157 5067 5079</li>
 								</ul>
-							</div>
-							<div class="col-md-3">
-								<?php //get_search_form(); ?>
 							</div>
 						</div>
 					</hgroup>

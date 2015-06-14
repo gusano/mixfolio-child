@@ -11,7 +11,7 @@
 
 		<footer id="colophon" class="row" role="contentinfo">
 			<div id="site-generator" class="twelve columns">
-				<span class="right">
+				<span class="right" style="font-size: 9px;">
 					Code and design: <a href="http://yvanvolochine.com">(yv)</a>
 				</span>
 			</div>

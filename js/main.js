@@ -10,14 +10,23 @@ $(document).ready(function() {
   segments = path.split('/');
   page = segments[segments.length - 2];
 
-  if (page === 'portfolio') {
-    // Launch lightbox automagically
-    setTimeout(function() {
-      var firstImg = $('img[alt="page01"]');
+  switch (page) {
+    case 'portfolio':
+      // Launch lightbox automagically
+      setTimeout(function() {
+        var firstImg = $('img[alt="page01"]');
 
-      firstImg.click();
-      firstImg.removeAttr('width').removeAttr('height');
-      firstImg.css('width', '123px').css('height', '178px');
-    }, 100);
+        firstImg.click();
+        firstImg.removeAttr('width').removeAttr('height');
+        firstImg.css('width', '123px').css('height', '178px');
+      }, 100);
+      break;
+    case 'reel':
+      $('.entry-content').css('text-align', 'center');
+      break;
+    case 'angela':
+      // hide menu pages on main page
+      $('ul.categories').css('display', 'none')
+      break;
   }
 });

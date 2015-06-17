@@ -49,8 +49,9 @@
 								</a>
 							</h1>-->
 							</div>
-							<div class="col-md-2">
+							<div class="col-md-3">
 								<ul class="categories">
+									<li>&nbsp;</li>
 									<?php
 									/*
 									$currentCat = get_category(get_query_var('cat'))->slug;
@@ -71,6 +72,7 @@
 							</div>
 							<div class="col-md-2">
 								<ul class="categories">
+									<li>&nbsp;</li>
 									<?php
 									/*
 									$pages = get_pages();
@@ -89,7 +91,7 @@
 									?>
 								</ul>
 							</div>
-							<div class="col-md-4">
+							<div class="col-md-3 col-md-offset-1">
 								<ul class="contact">
 									<li>Angela Bravo</li>
 									<li><a href="mailto:arte@angelabravo.net">arte@angelabravo.net</a></li>
@@ -109,7 +111,7 @@
 						<?php get_search_form(); ?>
 					</div>-->
 				</div>
-			</div> 
+			</div>
 		</header>
 
 		<div class="main-outer">

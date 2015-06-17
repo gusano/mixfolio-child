@@ -39,33 +39,51 @@ get_header(); ?>
 			<?php echo mixfolio_secondary_nav_menu(); ?>
 
 			<!--<ul class="grid">-->
-			<div class="row">
-				<?php
-					$paged = ( get_query_var( 'paged' ) ) ? get_query_var( 'paged' ) : 1;
+			<div class="container-fluid">
+				<div class="row">
+					<div class="col-md-4 col-md-offset-1">
+						<?php
+							$link = sprintf('/%/angela/portfolio', $_SERVER['HTTP_HOST']);
+							printf('<a class="main-page" href="%s">Portfolio</a></li>', $link);
+						?>
+						<!--<a class="main-page" href="">Portfolio</a>-->
+					</div>
+					<div class="col-md-4 col-md-offset-2">
+						<?php
+							$link = sprintf('/%/angela/reel', $_SERVER['HTTP_HOST']);
+							printf('<a class="main-page" href="%s">Reel</a></li>', $link);
+						?>
+						<!--<a class="main-page" href="">Reel</a>-->
+					</div>
+					<?php
+						/*
+						$paged = ( get_query_var( 'paged' ) ) ? get_query_var( 'paged' ) : 1;
 
-					$grid_args = array(
-						'posts_per_page' => get_option( 'posts_per_page' ),
-						'paged' => $paged,
-					);
+						$grid_args = array(
+							'posts_per_page' => get_option( 'posts_per_page' ),
+							'paged' => $paged,
+						);
 
-					$grid_query = new WP_Query( $grid_args );
+						$grid_query = new WP_Query( $grid_args );
 
-					while ( $grid_query->have_posts() ) : $grid_query->the_post();
-						/**
-						* Thumbnail Grid
+						while ( $grid_query->have_posts() ) : $grid_query->the_post();
+							//
+							// Thumbnail Grid
+							//
+							get_template_part( 'content', 'grid' );
+
+							$mixfolio_count++;
+
+						endwhile; wp_reset_postdata();
+
+						if (!$grid_query->have_posts()) {
+							echo '<p class="text-center" style="padding: 20px; line-height: 40px; font-weight: bold; font-size: 3em">';
+							echo 'Under construction.. <br />Coming soon.</p>';
+						}
 						*/
-						get_template_part( 'content', 'grid' );
-
-						$mixfolio_count++;
-
-					endwhile; wp_reset_postdata();
-
-					if (!$grid_query->have_posts()) {
-						echo '<p class="text-center" style="padding: 20px; line-height: 40px; font-weight: bold; font-size: 3em">';
-						echo 'Under construction.. <br />Coming soon.</p>';
-					}
- 				?>
- 			</div>
+	 				?>
+	 			</div>
+			</div>
 			<!--</ul>--><!-- .grid -->
 
 			<?php mixfolio_content_nav( 'nav-below' ); ?>

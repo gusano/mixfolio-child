@@ -52,6 +52,7 @@
 							<div class="col-md-2">
 								<ul class="categories">
 									<?php
+									/*
 									$currentCat = get_category(get_query_var('cat'))->slug;
 
 									$categories = get_categories(array('hide_empty' => 0));
@@ -60,12 +61,18 @@
 										$class = ($niceName === $currentCat) ? 'active' : '';
 										printf('<li class="%s"><a href="%s/category/%s">%s</a></li>', $class, site_url(), $niceName, $category->name);
 									}
+									*/
+										$currentPage = get_query_var('pagename');
+										$class = ($currentPage === 'portfolio') ? 'active' : '';
+										$link = sprintf('/%/angela/portfolio', $_SERVER['HTTP_HOST']);
+										printf('<li class="%s"><a href="%s">Portfolio</a></li>', $class, $link);
 									?>
 								</ul>
 							</div>
 							<div class="col-md-2">
 								<ul class="categories">
 									<?php
+									/*
 									$pages = get_pages();
 									$currentPage = get_query_var('pagename');
 									foreach ($pages as $page) {
@@ -74,6 +81,11 @@
 										$class = ($currentPage === strtolower($title)) ? 'active' : '';
 										printf('<li class="%s"><a href="%s">%s</a></li>', $class, $link, $title);
 									}
+									*/
+										$currentPage = get_query_var('pagename');
+										$class = ($currentPage === 'reel') ? 'active' : '';
+										$link = sprintf('/%/angela/reel', $_SERVER['HTTP_HOST']);
+										printf('<li class="%s"><a href="%s">Reel</a></li>', $class, $link);
 									?>
 								</ul>
 							</div>

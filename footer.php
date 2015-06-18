@@ -38,6 +38,6 @@
 	<?php endif; ?>
 
 <?php wp_footer(); ?>
-<script src="<?php echo get_template_directory_uri(); ?>/../mixfolio-child/js/main.js?rdm=as8d7sd05" type="text/javascript"></script>
+<script src="<?php echo get_template_directory_uri(); ?>/../mixfolio-child/js/main.js?rdm=as8d7sd06" type="text/javascript"></script>
 </body>
 </html>

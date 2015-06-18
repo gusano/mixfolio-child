@@ -15,7 +15,7 @@ $(document).ready(function() {
       // Launch lightbox automagically
       setTimeout(function() {
         var firstImg = $('img[alt="page01"]');
-        var lastImg = $('img[alt="page12"]');
+        var lastImg = $('img[alt="page18"]');
 
         // firstImg.click();
         firstImg.removeAttr('width').removeAttr('height');

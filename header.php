@@ -13,6 +13,12 @@
 <!--[if !(IE 8)]><!-->
 <html <?php language_attributes(); ?>>
 <!--<![endif]-->
+<style type="text/css">
+@font-face {
+	font-family: GraublauWeb;
+	src: url("<?php echo get_stylesheet_directory(); ?>/fonts/FiraSansOT.otf") format("opentype");
+}
+</style>
 <head>
 <meta charset="<?php bloginfo( 'charset' ); ?>" />
 <meta name="viewport" content="initial-scale=1.0, width=device-width" />
@@ -21,6 +27,7 @@
 <link rel="pingback" href="<?php bloginfo( 'pingback_url' ); ?>" />
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css">
 <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
+<link href='http://fonts.googleapis.com/css?family=Amaranth' rel='stylesheet' type='text/css'>
 <!--<link href='http://fonts.googleapis.com/css?family=Oleo+Script:400,700' rel='stylesheet' type='text/css'>-->
 <!--<link href='http://fonts.googleapis.com/css?family=Berkshire+Swash' rel='stylesheet' type='text/css'>-->
 <!--[if lt IE 9]>

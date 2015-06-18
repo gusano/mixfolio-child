@@ -16,7 +16,7 @@ $(document).ready(function() {
       setTimeout(function() {
         var firstImg = $('img[alt="page01"]');
 
-        firstImg.click();
+        // firstImg.click();
         firstImg.removeAttr('width').removeAttr('height');
         firstImg.css('width', '123px').css('height', '178px');
       }, 100);

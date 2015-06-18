@@ -18,7 +18,8 @@ body {
 }
 html * {
 	/*font-family: "helvetica neue", "helvetica", arial, sans-serif !important;*/
-	font-family: "Trebuchet MS", Helvetica, sans-serif !important;
+	/*font-family: "Trebuchet MS", Helvetica, sans-serif !important;*/
+	font-family: FiraSansOT Helvetica sans-serif !important;
 }
 #branding a {
 	color: #444; /*#2a85e8;*/
@@ -52,16 +53,16 @@ h1#site-title a {
  test yvan */
 #branding div > ul > li {
 	float: none;
-	font-family: sans-serif !important;
 	color: #000 !important;
 	/*font-size: 11px;*/
 	font-size: 1.1em;
 	margin: 0;
-	line-height: 14px;
+	line-height: 20px;
 	position: relative;
 	top: 14px !important;
 }
 #branding div > ul > li > a {
+	font-size: 18px;
 	color: #767070 !important;
 	padding: 0;
 	line-height: 14px;
@@ -262,11 +263,19 @@ a.card-link {
 a.main-page {
 	display: block;
 	padding: 1.6em 0 1.4em;
-	font-family: "Trebuchet MS", Helvetica, sans-serif !important;
+	/*font-family: "Trebuchet MS", Helvetica, sans-serif !important;*/
+	font-family: Amaranth, Helvetica, sans-serif !important;
 	font-size: 5em !important;
 	font-weight: bold;
 	color: #6087B0 !important;
 	border: 4px dashed #6087B0;
 	text-align: center;
 	margin-bottom: 35px;
+}
+article header,
+article p {
+	padding-left: 5em;
+}
+h1.entry-title {
+	font-family: Amaranth, Helvetica, sans-serif !important;
 }

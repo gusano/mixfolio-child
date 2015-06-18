@@ -15,10 +15,13 @@ $(document).ready(function() {
       // Launch lightbox automagically
       setTimeout(function() {
         var firstImg = $('img[alt="page01"]');
+        var lastImg = $('img[alt="page12"]');
 
         // firstImg.click();
         firstImg.removeAttr('width').removeAttr('height');
         firstImg.css('width', '123px').css('height', '178px');
+        lastImg.removeAttr('width').removeAttr('height');
+        lastImg.css('width', '123px').css('height', '178px');
       }, 100);
       break;
     case 'reel':
